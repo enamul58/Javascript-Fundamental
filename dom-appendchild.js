@@ -23,3 +23,7 @@ const secondLang = document.querySelector("li:nth-child(2)");
 const li = document.createElement("li");
 li.innerHTML = "golang";
 secondLang.replaceWith(li);
+
+//approch-02
+const firstLang = document.querySelector("li:first-child");
+firstLang.outerHTML = "<li>TypeScript</li>";
