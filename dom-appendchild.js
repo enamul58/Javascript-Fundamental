@@ -1,3 +1,4 @@
+// For Insert list item inside unordered list
 // approach-01
 function addListItem(language) {
   let li = document.createElement("li");
@@ -15,3 +16,10 @@ function addListItemOptimizeWay(language) {
 }
 
 addListItemOptimizeWay("C");
+
+//For Edit list item inside unordered list
+// approch-01
+const secondLang = document.querySelector("li:nth-child(2)");
+const li = document.createElement("li");
+li.innerHTML = "golang";
+secondLang.replaceWith(li);
