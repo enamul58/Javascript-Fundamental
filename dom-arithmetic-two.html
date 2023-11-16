@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Addition & subtract Operation</title>
+    <style>
+      .addToBag,
+      .addToItem {
+        padding: 8px 20px;
+        background: #90ee90;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+      }
+      .wishlist {
+        padding: 8px 35px;
+        border-radius: 8px;
+        display: inline-flex;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <button
+      type="button"
+      class="addToBag"
+      onclick="
+       increment++;
+      document.querySelector('#outPut').innerText = `Your Bag has ${increment} item`"
+      ;
+    >
+      Add to Bag
+    </button>
+    <button
+      type="button"
+      class="wishlist"
+      onclick="
+     increment--;
+     document.querySelector('#outPut').innerText = `Your Bag has ${increment} item`;
+    "
+    >
+      Move to wishlist
+    </button>
+    <button
+      type="button"
+      class="addToItem"
+      onclick="
+    increment += 2;
+    document.querySelector('#outPut').innerText = `Your Bag has ${increment} item`; 
+    "
+    >
+      Add 1 + 1 Sale item
+    </button>
+    <h1 id="outPut"></h1>
+    <script>
+      let increment = 0;
+    </script>
+  </body>
+</html>
