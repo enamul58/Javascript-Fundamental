@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Addition & subtract Operation</title>
+    <style>
+      .addToBag,
+      .addToItem {
+        padding: 8px 20px;
+        background: #90ee90;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+      }
+      .wishlist {
+        padding: 8px 35px;
+        border-radius: 8px;
+        display: inline-flex;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <button type="button" class="addToBag" onClick="claculation(this)">
+      Add to Bag
+    </button>
+    <button type="button" class="wishlist" onClick="claculation(this)">
+      Move to wishlist
+    </button>
+    <button type="button" class="addToItem" onClick="claculation(this)">
+      Add 1 + 1 Sale item
+    </button>
+    <p id="outPut"></p>
+    <script>
+      let i = 0;
+      var num;
+      function claculation(ref) {
+        if (ref.className == "addToBag") {
+          let incremnt = ++i;
+          num = incremnt;
+          document.getElementById(
+            "outPut"
+          ).innerHTML = `Your Bag has ${num} items`;
+        } else if (ref.className == "wishlist") {
+          num--;
+          document.getElementById(
+            "outPut"
+          ).innerHTML = `Your Bag has ${num} items`;
+        } else if (ref.className == "addToItem") {
+          num += 2;
+          document.getElementById(
+            "outPut"
+          ).innerHTML = `Your Bag has ${num} items`;
+        }
+      }
+    </script>
+  </body>
+</html>
