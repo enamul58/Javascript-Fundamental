@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Cookie</title>
+  </head>
+  <body>
+    <div>
+      <input
+        type="button"
+        value="Set Name Cookie"
+        onclick="setCookie('name', 'Md.Enamul Haue Sarker', 2)"
+      />
+    </div>
+    <div>
+      <input
+        type="button"
+        value="Set User Name Cookie"
+        onclick="setCookie('username', 'enamullimon', 2)"
+      />
+    </div>
+    <div>
+      <input
+        type="button"
+        value="Get Name Cookie"
+        onclick="alert(getCookie('name'))"
+      />
+    </div>
+    <div>
+      <input
+        type="button"
+        value="Get User Name Cookie"
+        onclick="alert(getCookie('username'))"
+      />
+    </div>
+    <div>
+      <input
+        type="button"
+        value="Check User Name Cookie"
+        onclick="checkCookie('username')"
+      />
+    </div>
+    <div>
+      <input
+        type="button"
+        value="Check Age Name Cookie"
+        onclick="checkCookie('age')"
+      />
+    </div>
+    <script src="./cookie.js"></script>
+  </body>
+</html>
